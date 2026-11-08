@@ -72,6 +72,7 @@ table.dims { width: 100%; border-collapse: collapse; margin-top: 24px; font-size
 table.dims th, table.dims td { text-align: left; padding: 11px 0; border-top: 1px solid var(--line); vertical-align: top; }
 table.dims th { color: var(--muted); font-weight: 500; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
 table.dims td:last-child, table.dims th:last-child { text-align: right; white-space: nowrap; padding-left: 16px; }
+table.dims.wrap td:last-child { white-space: normal; max-width: 60%; }
 .table-scroll { overflow-x: auto; }
 
 /* components */
@@ -324,7 +325,7 @@ document.documentElement.classList.add('wartet');
       <article class="part"><div class="ph"><img src="img/part-tissue.webp" alt="T-shirt in printed tissue paper with seal sticker" loading="lazy" width="1000" height="1000"></div><div class="tx"><span class="num">9 – 10 · Print</span><h3>Tissue paper and seal</h3><dl><dt>Tissue</dt><dd>17 g/m² black tissue, 1/0 grey repeat pattern «txtme.social», sheet ≥ 500 × 700 mm, 1 per box</dd><dt>Seal</dt><dd>Round sticker Ø 50 mm, white vinyl 4/0 with printed black, gloss laminate</dd><dt>Use</dt><dd>Wraps the folded T-shirt, closed with the seal</dd></dl></div></article>
     </div>
     <div class="table-scroll">
-    <table class="dims">
+    <table class="dims wrap">
       <tr><th>Contents, not part of the packaging</th><th>Size (mm)</th></tr>
       <tr><td>T-shirt, folded</td><td>fold target 180 × 240 mm · thickness with tissue ≤ 70 mm (7 mm play in the 77 mm base) · verify on the white sample</td></tr>
       <tr><td>Disposable camera with txtme wrap (wrap print 84.7 × 192)</td><td>108 × 63 × 37 (3D model) · confirm with the purchased model</td></tr>
