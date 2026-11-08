@@ -201,7 +201,7 @@ document.documentElement.classList.add('wartet');
     <div class="draw-grid">
       <div class="sheet">
         <h3>Top view · insert layout</h3>
-        <p class="note">Box base, outside 400 × 260 mm, board 3 mm. Left: foam insert with cut-outs. Right: open compartment for the T-shirt.</p>
+        <p class="note">Box base, outside 400 × 260 mm, board 3 mm. Left: foam insert, camera at the back, stickers and card side by side at the front. Right: open compartment for the T-shirt.</p>
         <svg viewBox="0 0 520 396" role="img" aria-label="Top view of the box with insert layout and dimensions">
           <defs>
             <marker id="a" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#9d9b96"/></marker>
@@ -212,18 +212,17 @@ document.documentElement.classList.add('wartet');
           <rect x="43.3" y="33.3" width="433.4" height="279.4" fill="none" stroke="#66645f" stroke-width="1"/>
           <!-- foam 3..205 x 3..257 -->
           <rect x="43.3" y="33.3" width="222.2" height="279.4" fill="#1d1d21" stroke="#9d9b96" stroke-width="1"/>
-          <!-- camera pocket x 9..123, y 179..248 (from front) -> svg y = 30 + (260 - y)*1.1 -->
-          <rect x="49.9" y="43.2" width="125.4" height="75.9" rx="4" fill="#0b0b0c" stroke="#60c4e3" stroke-width="1.5"/>
-          <text x="112.6" y="78" font-size="11" text-anchor="middle">Camera</text>
-          <text x="112.6" y="93" font-size="10" text-anchor="middle" fill="#9d9b96" style="fill:#9d9b96">114 × 69 · depth 18</text>
-          <!-- sticker pocket x 131..197, y 180..246 -->
-          <rect x="184.1" y="45.4" width="72.6" height="72.6" rx="4" fill="#0b0b0c" stroke="#60c4e3" stroke-width="1.5"/>
-          <text x="220.4" y="78" font-size="11" text-anchor="middle">Stickers</text>
-          <text x="220.4" y="93" font-size="10" text-anchor="middle" style="fill:#9d9b96">66 × 66 · d 6</text>
-          <!-- card pocket x 28..180, y 13..122 -->
-          <rect x="70.8" y="181.8" width="167.2" height="119.9" rx="3" fill="#0b0b0c" stroke="url(#g)" stroke-width="1.5"/>
-          <text x="154.4" y="238" font-size="11" text-anchor="middle">Welcome card</text>
-          <text x="154.4" y="253" font-size="10" text-anchor="middle" style="fill:#9d9b96">152 × 109 · depth 3.5</text>
+          <!-- camera pocket: back row, centred in the foam (114 x 69) -->
+          <rect x="91.7" y="65.2" width="125.4" height="75.9" rx="4" fill="#0b0b0c" stroke="#60c4e3" stroke-width="1.5"/>
+          <text x="154.4" y="100" font-size="11" text-anchor="middle">Camera</text>
+          <text x="154.4" y="115" font-size="10" text-anchor="middle" style="fill:#9d9b96">114 × 69 · depth 18</text>
+          <!-- front row: stickers left, card right -->
+          <rect x="53.75" y="206.55" width="72.6" height="72.6" rx="4" fill="#0b0b0c" stroke="#60c4e3" stroke-width="1.5"/>
+          <text x="90.05" y="239" font-size="11" text-anchor="middle">Stickers</text>
+          <text x="90.05" y="254" font-size="10" text-anchor="middle" style="fill:#9d9b96">66 × 66 · d 6</text>
+          <rect x="135.15" y="199.95" width="119.9" height="85.8" rx="3" fill="#0b0b0c" stroke="url(#g)" stroke-width="1.5"/>
+          <text x="195.1" y="239" font-size="11" text-anchor="middle">Welcome card</text>
+          <text x="195.1" y="254" font-size="10" text-anchor="middle" style="fill:#9d9b96">109 × 78 · depth 3.5</text>
           <!-- tshirt compartment 205..397 x 3..257 -->
           <rect x="271" y="40" width="199" height="266" rx="10" fill="none" stroke="#9d9b96" stroke-width="1" stroke-dasharray="5 5"/>
           <text x="370.5" y="165" font-size="12" text-anchor="middle">T-shirt in tissue</text>
@@ -244,7 +243,7 @@ document.documentElement.classList.add('wartet');
           <tr><th>Cut-out / compartment</th><th>W × D × depth (mm)</th></tr>
           <tr><td>Camera pocket</td><td>114 × 69 × 18</td></tr>
           <tr><td>Sticker pocket</td><td>66 × 66 × 6</td></tr>
-          <tr><td>Card pocket</td><td>152 × 109 × 3.5</td></tr>
+          <tr><td>Card pocket</td><td>109 × 78 × 3.5</td></tr>
           <tr><td>T-shirt compartment</td><td>192 × 254 × 77</td></tr>
         </table>
         </div>
@@ -301,8 +300,8 @@ document.documentElement.classList.add('wartet');
     <div class="parts">
       <article class="part"><div class="ph"><img src="img/part-outer-lid.webp" alt="Outer lid" loading="lazy" width="1000" height="635"></div><div class="tx"><span class="num">1 · Packaging</span><h3>Outer lid</h3><dl><dt>Size</dt><dd>406 × 266 × 35 mm</dd><dt>Material</dt><dd>Rigid grey board, wrapped in matte black paper</dd><dt>Print</dt><dd>txtme.social logo in colour, «LAUNCH EDITION — FIRST DROP» in white, centred</dd><dt>Finish</dt><dd>Matte, option: soft-touch</dd></dl></div></article>
       <article class="part"><div class="ph fit"><img src="img/part-lid-inside.webp" alt="Box with hinged lid, inside print" loading="lazy" width="1000" height="454"></div><div class="tx"><span class="num">2 – 4 · Packaging</span><h3>Box with hinged lid</h3><dl><dt>Size</dt><dd>Base 400 × 260 × 80 mm, lid 25 mm</dd><dt>Material</dt><dd>Rigid grey board, wrapped in matte black paper, paper hinge along the back edge</dd><dt>Print inside</dt><dd>Full surface 394 × 254 mm: grid, glow, welcome line, QR code on white field</dd><dt>Outside</dt><dd>Plain black</dd></dl></div></article>
-      <article class="part"><div class="ph"><img src="img/part-camera.webp" alt="Foam insert with camera" loading="lazy" width="1000" height="532"></div><div class="tx"><span class="num">5 · Packaging</span><h3>Foam insert</h3><dl><dt>Size</dt><dd>202 × 254 × 61 mm</dd><dt>Material</dt><dd>Black foam (EVA or PE)</dd><dt>Cut-outs</dt><dd>Camera 114 × 69 × 18 · stickers 66 × 66 × 6 · card 152 × 109 × 3.5</dd><dt>Note</dt><dd>Small finger notch at the card</dd></dl></div></article>
-      <article class="part"><div class="ph"><img src="img/part-card.webp" alt="Welcome card" loading="lazy" width="1000" height="774"></div><div class="tx"><span class="num">8 · Print</span><h3>Welcome card</h3><dl><dt>Size</dt><dd>148 × 105 mm (A6)</dd><dt>Material</dt><dd>Thick black board, about 1.5–2 mm</dd><dt>Print</dt><dd>«Welcome to the community.» in white</dd><dt>Finish</dt><dd>Coloured edge cyan to pink, light blind embossing of the grid</dd></dl></div></article>
+      <article class="part"><div class="ph"><img src="img/part-camera.webp" alt="Foam insert with camera" loading="lazy" width="1000" height="532"></div><div class="tx"><span class="num">5 · Packaging</span><h3>Foam insert</h3><dl><dt>Size</dt><dd>202 × 254 × 61 mm</dd><dt>Material</dt><dd>Black foam (EVA or PE)</dd><dt>Cut-outs</dt><dd>Back row: camera 114 × 69 × 18 · front row: stickers 66 × 66 × 6 and card 109 × 78 × 3.5, side by side</dd><dt>Note</dt><dd>Small finger notch at the card</dd></dl></div></article>
+      <article class="part"><div class="ph"><img src="img/part-card.webp" alt="Welcome card" loading="lazy" width="1000" height="774"></div><div class="tx"><span class="num">8 · Print</span><h3>Welcome card</h3><dl><dt>Size</dt><dd>105 × 74 mm (A7)</dd><dt>Material</dt><dd>Thick black board, about 1.5–2 mm</dd><dt>Print</dt><dd>«Welcome to the community.» in white</dd><dt>Finish</dt><dd>Coloured edge cyan to pink, light blind embossing of the grid</dd></dl></div></article>
       <article class="part"><div class="ph"><img src="img/part-stickers.webp" alt="Sticker set" loading="lazy" width="1000" height="1135"></div><div class="tx"><span class="num">7 · Print</span><h3>Sticker set</h3><dl><dt>Size</dt><dd>About 60 mm</dd><dt>Material</dt><dd>Vinyl, die-cut along the logo</dd><dt>Print</dt><dd>Logo in colour on black, white contour</dd><dt>Quantity</dt><dd>Per box to be confirmed</dd></dl></div></article>
       <article class="part"><div class="ph"><img src="img/part-tissue.webp" alt="T-shirt in printed tissue paper with seal sticker" loading="lazy" width="1000" height="1000"></div><div class="tx"><span class="num">9 – 10 · Print</span><h3>Tissue paper and seal</h3><dl><dt>Tissue</dt><dd>Black tissue paper, «txtme.social» printed as a fine diagonal pattern in grey</dd><dt>Seal</dt><dd>Round sticker Ø 50 mm, logo on black, gloss</dd><dt>Use</dt><dd>Wraps the folded T-shirt, closed with the seal</dd></dl></div></article>
     </div>
@@ -324,7 +323,7 @@ document.documentElement.classList.add('wartet');
     <div class="art">
       <figure class="w3"><div class="frame"><img src="img/art-lid-inside.webp" alt="Artwork lid inside" loading="lazy" width="1400" height="951"></div><figcaption><b>Lid inside · 394 × 254 mm</b>Grid with blue and pink glow, welcome line, QR code.</figcaption></figure>
       <figure class="w3"><div class="frame"><img src="img/art-lid-top.webp" alt="Artwork outer lid" loading="lazy" width="1400" height="967"></div><figcaption><b>Outer lid · 406 × 266 mm</b>Logo and line centred, straight to the edges.</figcaption></figure>
-      <figure class="w2"><div class="frame"><img src="img/art-card.webp" alt="Artwork welcome card" loading="lazy" width="1400" height="993"></div><figcaption><b>Welcome card · 148 × 105 mm</b>White print, grid as blind embossing.</figcaption></figure>
+      <figure class="w2"><div class="frame"><img src="img/art-card.webp" alt="Artwork welcome card" loading="lazy" width="1400" height="993"></div><figcaption><b>Welcome card · 105 × 74 mm</b>White print, grid as blind embossing.</figcaption></figure>
       <figure class="w2"><div class="frame"><img src="img/art-tissue.webp" alt="Artwork tissue pattern" loading="lazy" width="1200" height="1200"></div><figcaption><b>Tissue paper pattern</b>Repeat, grey on black.</figcaption></figure>
       <figure class="w2"><div class="frame pad"><img src="img/art-seal.webp" alt="Artwork seal sticker" loading="lazy" width="600" height="600"></div><figcaption><b>Seal sticker · Ø 50 mm</b>Logo on black.</figcaption></figure>
       <figure class="w2"><div class="frame pad tall"><img src="img/art-camera-wrap.webp" alt="Camera wrap artwork" loading="lazy" width="617" height="1400"></div><figcaption><b>Camera wrap · 84.7 × 192 mm</b>Existing print file, ready.</figcaption></figure>
